@@ -24,7 +24,9 @@
         <input id="coeficiente-a" type="number" value="1">
         <label for="coeficiente-b" class="matematica">b: </label>
         <input id="coeficiente-b" type="number" value="1">
-        <!-- colocar o coeficiente c e o button aqui -->
+        <label for="coeficiente-c" class="matematica">c: </label>
+        <input id="coeficiente-c" type="number" value="1">
+        <button id="resolver">Resolver!</button>
       </section>
       <section id="resultado">
         O resultado é:
@@ -41,8 +43,18 @@
             <span class="matematica">x<sub>2</sub></span>: <input id="resultado-x2" type="number" disabled>
             <span class="matematica">x<sub>2</sub> = (-b - √Δ)/2a</span>
           </li>
+          <li>
+            <span class="matematica">Qtde raízes</span>: <input id="qtde-raizes" type="number" disabled>
+          </li>
+          <li>
+            <span class="matematica">Concavidade</span>: <input id="concavidade" type="text" disabled>
+          </li>
+          <li>
+            <span class="matematica">Coord vértice</span>: <input id="coord-vertice" type="text" disabled>
+          </li>
         </ul>
       </section>
     </main>
+    <script type="text/javascript" src="calculos.js"></script>
   </body>
 </html>
