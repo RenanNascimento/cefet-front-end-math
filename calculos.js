@@ -4,7 +4,7 @@ botaoResolver.addEventListener('click', function(){
 	let coef_a = document.querySelector('#coeficiente-a').value;
 
 	/* caso nao seja uma eq de seg grau */
-	if(coef_a === 0){
+	if(coef_a == 0){
 		window.alert('Não se trata de uma eq. do segundo grau !!!');
 		return;
 	}
@@ -33,7 +33,7 @@ botaoResolver.addEventListener('click', function(){
 
 	/* definindo qtde raizes */
 	let qtdeRaizes = document.querySelector('#qtde-raizes');
-	if(delta === 0){
+	if(delta == 0){
 		qtdeRaizes.value = 1;
 	}else{
 		qtdeRaizes.value = 2;
